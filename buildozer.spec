@@ -4,10 +4,10 @@
 title = My Application
 
 # (str) Package name
-package.name = myapp
+package.name = wa_optimizer
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = com.fyp
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -36,8 +36,8 @@ version = 0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-# comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy
+# comma separated e.g. requirements = python3, kivy, pillow, ffmpeg
+requirements = python3, kivy, pillow, ffmpeg
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -95,8 +95,7 @@ fullscreen = 0
 
 # (list) Permissions
 # (See https://python-for-android.readthedocs.io/en/latest/buildoptions/#build-options-1 for all the supported syntaxes and properties)
-#android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18)
-
+android.permissions = WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
 
@@ -442,7 +441,7 @@ warn_on_root = 1
 #    and extend the excluded directories to remove the HD content.
 #
 #[app@demo]
-#title = My Application (demo)
+title = WhatsApp Optimizer
 #
 #[app:source.exclude_patterns@demo]
 #images/hd/*
